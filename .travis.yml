@@ -1,7 +1,11 @@
 # Travis CI configuration
 
 sudo: required
-dist: trusty
+dist: Bionic
+
+arch:
+ - amd64
+ - ppc64le
 
 before_install:
 # Add Xenial repository and pull enough so that installing build-deps will not fail. (newer dpkg needed)
